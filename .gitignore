@@ -1,0 +1,28 @@
+# 環境與快取
+.venv/
+__pycache__/
+*.pyc
+.env
+
+# 測試用的預設圖與模型 (您剛剛下載來測試的檔案)
+bus.jpg
+yolov8n.pt
+
+# 追蹤程式與 UI 的輸出結果資料夾 (避免將大量影像推上 GitHub)
+output_*/
+output/
+processed_frames/
+*.csv
+
+# 資料集
+datasets/
+
+# 系統產生的隱藏檔案
+.DS_Store
+Thumbs.db
+
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.json
