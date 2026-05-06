@@ -1,0 +1,12 @@
+# Ultralytics low-spec merged dataset configuration
+path: datasets/_dataset
+train: images/train
+val: images/val
+test: images/test
+
+names:
+  0: pothole
+  1: scratch
+  2: manhole
+  3: circle
+  4: dirt

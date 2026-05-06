@@ -1,0 +1,13 @@
+[project]
+name = "track"
+version = "0.1.0"
+description = "YOLO + BoT-SORT image tracking with a side-by-side Windows UI"
+requires-python = ">=3.10"
+dependencies = [
+    "opencv-python",
+    "pillow",
+    "ultralytics",
+]
+
+[dependency-groups]
+dev = []

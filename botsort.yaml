@@ -1,0 +1,16 @@
+# Ultralytics BoT-SORT tracker settings for small defects
+tracker_type: botsort
+track_high_thresh: 0.15     # 降低初始關聯閾值，以適應有時信心度較低的瑕疵
+track_low_thresh: 0.05      # 降低二次關聯閾值
+new_track_thresh: 0.15      # 降低新軌跡建立閾值，讓小瑕疵容易被追蹤
+track_buffer: 60            # 稍微拉長 buffer (預設 30)，避免中間幾幀沒抓到就斷軌
+match_thresh: 0.9           # 放寬關聯閾值，小物件有時候 IOU 會較低
+fuse_score: True            # 融合檢測分數與 IOU
+
+# BoT-SORT specifics
+gmc_method: sparseOptFlow   # Global motion compensation 必開，以應對車輛移動/相機移動
+
+# ReID model related thresh (我們主要靠位置與運動，不開 ReID 也能追蹤)
+proximity_thresh: 0.5
+appearance_thresh: 0.25
+with_reid: False
